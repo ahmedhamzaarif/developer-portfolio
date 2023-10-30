@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- OwlCarousel CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- AoS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<!-- BootStrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<!-- Box Icons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./assets/main.css">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	<!-- Primary Meta Tags -->
+    <title>Ahmed Hamza - Frontend Developer</title> 
+	<meta name="description" content="Portfolio of a Front-end developer creating beautiful websites with a focus on responsive design. Proficient in HTML, CSS, BootStrap & JS.">
+	<meta name="keywords" content="Front-end Developer, Web Developer, Freelancer, Portfolio">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ahmedhamza.pk/">
+	<meta property="og:title" content="Ahmed Hamza - Frontend Developer">
+	<meta property="og:description" content="Portfolio of a Front-end developer creating beautiful websites with a focus on responsive design. Proficient in HTML, CSS, BootStrap & JS.">
+	<meta property="og:image" content="https://ahmedhamza.pk/assets/images/og.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://ahmedhamza.pk/">
+	<meta property="twitter:title" content="Ahmed Hamza - Frontend Developer">
+	<meta property="twitter:description" content="Portfolio of a Front-end developer creating beautiful websites with a focus on responsive design. Proficient in HTML, CSS, & JavaScript.">
+	<meta property="twitter:image" content="https://ahmedhamza.pk/assets/images/og.jpg">
+  </head>
+  <body id="top">
+    <!-- Header Start Here -->
+	<header id="header">
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top top-0">
+			<div class="container">
+				<a class="navbar-brand" href="/index.html">
+					<img src="./assets/images/logo.png" alt="Ahmed Hamza's Portfolio" srcset="">
+				</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+				  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body justify-content-end">
+					<ul class="navbar-nav nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link" href="#hero">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#work">Work</a>
+						</li>
+					</ul>
+				</div>
+			  </div>
+			</div>
+		</nav>
+	</header>
+	
+    <!-- Header End Here -->
+	<div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+		<section id="hero" class="container pt-5">
+			<div class="row">
+				<div class="col-md-7 col-left">
+					<div class="hero-txt" data-aos="zoom-in-right" data-aos-duration="500">
+						<div>
+							<span class="intro"><span class="wave">👋🏽</span> Hi, I’m a <span id="role"></span></span>
+							<span class="highlight">creating beautiful websites</span>
+							<span>with a</span>
+							<span class="underline">passion for design</span>.
+						</div>
+						<p class="my-4">My name is <span id="person"></span>, a <span id="role"></span> with <span id="experience"></span> of experience. Proficient in <span id="skills"></span>. Take a look at my work and if you like what you see,</p>
+						<a class="hero-btn" href="https://www.linkedin.com/in/ahmedhamzaarif/">
+							<span class="top-key"></span>
+							<span class="text">Let's Connect</span>
+							<span class="bottom-key-1"></span>
+							<span class="bottom-key-2"></span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-5 col-right">
+					<div class="hero-img" data-aos="zoom-in-left" data-aos-duration="500">
+						<img src="./assets/images/hero.png" class="img-fluid" alt="Ahmed Hamza">
+					</div>
+				</div>
+			</div>
+			<div class="text-center text-secondary mt-4 bounce fs-4 d-none d-md-block">
+				Scroll Down
+			</div>
+		</section>
+		<section id="clients" class="container mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 align-self-center">
+					<h2 class="text-center text-sm-start">Trusted By</h2>
+				</div>
+				<div class="col-md-9 col-sm-8">
+					<div class="owl-carousel owl-theme my-3 my-sm-5">
+						<div class="item"><img src="./assets/images/clients/checkxperts.png" alt="Check Xperts"></div>
+						<div class="item"><img src="./assets/images/clients/wonderWish.png" alt="Wonder Wish"></div>
+						<div class="item"><img src="./assets/images/clients/pipfa.png" alt="PIPFA"></div>
+						<div class="item"><img src="./assets/images/clients/webx.png" alt="Webx Ecommerce"></div>
+						<div class="item"><img src="./assets/images/clients/eyegallery.png" alt="Eye Gallery"></div>
+						<div class="item"><img src="./assets/images/clients/al-furqan.png" alt="Al Furqan Islamic Academy"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="container py-5 my-4" data-aos="zoom-in-up" data-aos-duration="1000">
+			<h2 class="section-title">About My Skills</h2>
+			<div class="row g-5">
+				<div class="col-lg-7">
+					<div class="display-6">2+ years working <br> experience as a <br> developer</div>
+					<p class="about-desc mt-3 mb-5">A Full Stack developer who is passionate about frontend development, I leverage my strong design foundations to create exceptional user experiences.</p>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="about-card">
+								<h3 class="about-card-title">Front-end Development</h3>	
+								<p class="about-card-desc">As a frontend developer, I have extensive knowledge and experience in HTML, CSS, JavaScript, Bootstrap, TailwindCSS, and ReactJS, making user interfaces into working applications.</p>
+								<div class="about-card-icon">
+								<i class='bx bxl-html5'></i>
+								<i class='bx bxl-css3'></i>
+								<i class='bx bxl-javascript'></i>
+								<i class='bx bxl-bootstrap'></i>
+								<i class='bx bxl-tailwind-css'></i>
+								<i class='bx bxl-react'></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about-card">
+								<h3 class="about-card-title">Back-end Development</h3>
+								<p class="about-card-desc">Furthermore, I have experience working on the backend side of the project, including expressJS, nodeJS, mongoDB, nextjs, and others.</p>
+								<div class="about-card-icon">
+									<i class='bx bxl-nodejs'></i>
+									<i class='bx bxl-mongodb'></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 d-none d-lg-flex align-items-baseline justify-content-end col-right position-relative p-sm-0">
+					<img id="about-img" src="./assets/images/about.png" class="img-fluid w-75" alt="Ahmed Hamza">
+					<div id="quote" class="card position-absolute bottom-0 start-0 w-50 p-3 border-0">
+						<div class="card-text">
+							<p class="fs-5 fw-light">"Good design means making something that looks good and works well at the same time."</p>
+							<i class="bi bi-twitter"></i> @AhmedHamzaArif
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="parallax" class="py-5 h3 my-5">
+			<div class="container">
+				<div class="row my-5">
+					<div class="col-lg-3 col-sm-6 text-center d-grid">
+						<i class="bx bx-laptop"></i>
+						<div><span class="counter">100</span>+</div>
+						<h4 class="text-center">Projects</h4>
+					</div>
+					<div class="col-lg-3 col-sm-6 text-center d-grid">
+						<i class="bx bxs-trophy"></i>
+						<div><span class="counter">2</span>x</div>
+						<h4 class="text-center">Project of the Month</h4>
+					</div>
+					<div class="col-lg-3 col-sm-6 text-center d-grid">
+						<i class="bx bxs-star"></i>
+						<div><span class="counter">1</span>x</div>
+						<h4 class="text-center">Star Employee</h4>
+					</div>
+					<div class="col-lg-3 col-sm-6 text-center d-grid">
+						<i class="bi bi-linkedin"></i>
+						<div><span class="counter">2500</span>+</div>
+						<h4 class="text-center">Followers</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="work" class="container py-5 my-4" data-aos="zoom-in-up" data-aos-duration="1000">
+			<h2 class="section-title mb-5">Featured Work</h2>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<div class="card scroll">
+						<img src="./assets/work/checkxperts.png" alt="Check Xperts">
+						<div class="link">
+							<a href="https://www.checkxperts.com/">
+								<i class="bi bi-arrow-up-right-circle"></i>
+								Visit Website
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="card scroll">
+						<img src="./assets/work/wonderwish.png" alt="Wonder Wish">
+						<div class="link">
+							<a href="https://thewonderwish.com/">
+								<i class="bi bi-arrow-up-right-circle"></i>
+								Visit Website
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="card scroll">
+						<img src="./assets/work/pipfa.png" alt="PIPFA">
+						<div class="link">
+							<a href="https://pipfa.org.pk/">
+								<i class="bi bi-arrow-up-right-circle"></i>
+								Visit Website
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <a href="/portfolio.html" class="btn rounded-custom btn-dark text-center px-4 py-2">
+				View More
+				<i class="bi bi-arrow-right"></i>
+			</a> -->
+		</section>
+	</div>
+	<!-- Footer Start Here -->
+	<footer id="footer" class="py-5">
+	  <div class="social d-flex justify-content-center gap-4 fs-3 mb-3">
+		  <a href="https://www.linkedin.com/in/ahmedhamzaarif/" target="_blank"><span class="d-none">Linkedin</span><i class="bx bxl-linkedin"></i></a>
+		  <a href="https://join.skype.com/invite/xI5PSvFW145S" target="_blank"><span class="d-none">Skype</span><i class="bx bxl-skype"></i></a>
+		  <a href="https://twitter.com/AhmedHamzaArif" target="_blank"><span class="d-none">Twitter</span><i class="bx bxl-twitter"></i></a>
+		  <a href="https://github.com/ahmedhamzaarif/" target="_blank"><span class="d-none">Github</span><i class="bx bxl-github"></i></a>
+		  <a href="mailto:ahmedarif2882@gmail.com"><span class="d-none">Email</span><i class="bx bxl-gmail"></i></a>
+	  </div>
+	  <div class="text-center">Coded with ❤️</div>
+	</footer>
+	<!-- Footer End Here -->
+
+
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<!-- OwlCarousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- AoS JS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- Custom JS -->
+	<script src="./assets/script.js"></script>
+	<!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<!-- CountUp JS -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
+  </body>
+</html>
