@@ -1,6 +1,16 @@
 {
-    "name": "Ahmed Hamza",
-    "role": "Frontend Developer",
+    "name": "Ahmed Arif",
+    "role": "Full Stack Developer",
     "experience": "2+ years",
-    "skills": "HTML, CSS & JavaScript"
+    "skills": "HTML, CSS & JavaScript",
+
+    "heroImg": "assets/images/hero.png",
+
+
+
+    "linkedinUser": "ahmedhamzaarif",
+    "skypeUser": "xI5PSvFW145S",
+    "twitterUser": "AhmedHamzaArif",
+    "githubUser": "ahmedhamzaarif",
+    "emailUser": "ahmedarif2882@gmail.com"
 }

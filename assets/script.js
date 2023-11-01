@@ -34,10 +34,27 @@ AOS.init();
     const roleEl = document.querySelector('#role')
     const experienceEl = document.querySelector('#experience')
     const skillsEl = document.querySelector('#skills')
-    
+    const heroImgEl = document.querySelector('#heroImg')
+    const linkedin = document.querySelector('#linkedin')
+    const skype = document.querySelector('#skype')
+    const github = document.querySelector('#github')
+    const email = document.querySelector('#email')
+
     personEl.textContent = data.name 
     roleEl.textContent = data.role 
     experienceEl.textContent = data.experience
     skillsEl.textContent = data.skills
+
+    imgEl = document.createElement('img')
+    imgEl.src = data.heroImg
+    imgEl.alt = data.name
+    imgEl.classList.add('img-fluid')
+    heroImgEl.appendChild(imgEl)
+
+    linkedin.href += data.linkedinUser
+    skype.href += data.skypeUser
+    twitter.href += data.twitterUser
+    github.href += data.githubUser
+    email.href += data.emailUser
 })();
 
