@@ -113,7 +113,7 @@ section{max-width: 100vw;overflow-x: hidden;}
 
 /* --------------------------------- client --------------------------------- */
 /* #clients img{width:15rem;max-width:100%;margin: auto} */
-#clients img {width: auto;max-width: 100%;margin: auto;height: 5rem}
+#clients img {width: auto;max-width: 80%;margin: auto;height: 5rem}
 
 /* --------------------------------- Parallax --------------------------------- */
 #parallax{background: #171717 url('./images/parallax-bg.jpg') center no-repeat fixed; background-size:cover;color: #fff}

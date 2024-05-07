@@ -1,16 +1,33 @@
 {
-    "name": "Ahmed Arif",
+    "name": "Ahmed Hamza",
     "role": "Full Stack Developer",
-    "experience": "2+ years",
+    "experience": "20+ years",
     "skills": "HTML, CSS & JavaScript",
-
-    "heroImg": "assets/images/hero.png",
-
-
-
-    "linkedinUser": "ahmedhamzaarif",
-    "skypeUser": "xI5PSvFW145S",
-    "twitterUser": "AhmedHamzaArif",
-    "githubUser": "ahmedhamzaarif",
-    "emailUser": "ahmedarif2882@gmail.com"
+    "education": "Bachelor's in Computer Science",
+    "heroImg": "assets/images/hero.jpg",
+    "aboutImg": "assets/images/about.jpg",
+    "social": {
+        "linkedinUser": "abc",
+        "skypeUser": "xI5PSvFW145S",
+        "twitterUser": "AhmedHamzaArif",
+        "githubUser": "ahmedhamzaarif",
+        "emailUser": "ahmedarif2882@gmail.com"
+    },
+    "work": [
+        {
+            "Client": "Client 1",
+            "img": "./assets/work/work1.jpg",
+            "link": "https://example.com"
+        },
+        {
+            "Client": "Client 2",
+            "img": "./assets/work/work2.jpg",
+            "link": "https://example.com"
+        },
+        {
+            "Client": "Client 3",
+            "img": "./assets/work/work3.jpg",
+            "link": "https://example.com"
+        }
+    ]
 }

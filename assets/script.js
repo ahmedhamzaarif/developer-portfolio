@@ -30,20 +30,21 @@ AOS.init();
     const response = await fetch("./data.json");
     const data = await response.json();
 
-    const personEl = document.querySelector('#person')
-    const roleEl = document.querySelector('#role')
-    const experienceEl = document.querySelector('#experience')
-    const skillsEl = document.querySelector('#skills')
+    document.getElementById('person').textContent = data.name;
+    document.querySelectorAll('#role').forEach(link => {
+        link.textContent = data.role
+    })
+    document.getElementById('experience').textContent = data.experience;
+    document.getElementById('skills').textContent = data.skills;
+     // document.getElementById('education').textContent = data.education;
+    
     const heroImgEl = document.querySelector('#heroImg')
-    const linkedin = document.querySelector('#linkedin')
+    const aboutImgEl = document.querySelector('#about-img')
+    // const linkedin = document.querySelector('#linkedin')
     const skype = document.querySelector('#skype')
     const github = document.querySelector('#github')
     const email = document.querySelector('#email')
 
-    personEl.textContent = data.name 
-    roleEl.textContent = data.role 
-    experienceEl.textContent = data.experience
-    skillsEl.textContent = data.skills
 
     imgEl = document.createElement('img')
     imgEl.src = data.heroImg
@@ -51,10 +52,48 @@ AOS.init();
     imgEl.classList.add('img-fluid')
     heroImgEl.appendChild(imgEl)
 
-    linkedin.href += data.linkedinUser
-    skype.href += data.skypeUser
-    twitter.href += data.twitterUser
-    github.href += data.githubUser
-    email.href += data.emailUser
+    aboutImgEl.src = data.aboutImg
+
+    document.querySelectorAll('#linkedin').forEach(link => {
+        link.href += data.social.linkedinUser;
+    });
+    document.querySelectorAll('#twitter').forEach(link => {
+        link.href ? link.href += data.social.twitterUser : link.textContent += '@' + data.social.twitterUser;
+    });
+    skype.href += data.social.skypeUser
+    twitter.href += data.social.twitterUser
+    github.href += data.social.githubUser
+    email.href += data.social.emailUser 
+    
+    // Function to generate HTML for each work item
+    function generateWorkHTML(workItem) {
+        return `
+        <div class="col-lg-4 col-sm-6">
+            <div class="card scroll">
+                <img src="${workItem.img}" alt="${workItem.Client}">
+                <div class="link">
+                    <a href="${workItem.link}">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                        Visit Website
+                    </a>
+                </div>
+            </div>
+        </div>
+        `;
+    }
+    
+    // Function to render the work section
+    function renderWorkSection() {
+        const workSection = document.getElementById('work');
+        const workContent = data.work.map(workItem => generateWorkHTML(workItem)).join('');
+        workSection.innerHTML = `
+            <h2 class="section-title mb-5">Featured Work</h2>
+            <div class="row">${workContent}</div>
+        `;
+    }
+    
+    // Call the function to render the work section
+    renderWorkSection();
 })();
+
 
