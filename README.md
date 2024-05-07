@@ -1,4 +1,4 @@
-Example: ahmedhamza.pk
+Example: https://ahmedhamza.pk
 # How to use
 
 1. Fork this repo
